@@ -1,4 +1,7 @@
 import React from 'react';
+
+import Ionicons from "react-native-vector-icons/Ionicons";
+import { Icon } from 'react-native-elements'
 import {createDrawerNavigator} from '@react-navigation/drawer';
 
 import TabNavigator from './TabNavigator';
@@ -8,7 +11,7 @@ const Drawer = createDrawerNavigator();
 
 const DrawerNavigator = () => {
   return(
-    <Drawer.Navigator>
+    <Drawer.Navigator>    
     <Drawer.Screen name="Home" component={TabNavigator}/>
     <Drawer.Screen name="Profile" component={Profile}/>
     </Drawer.Navigator>
