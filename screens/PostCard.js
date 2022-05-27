@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     },
     profileImage: {
       flex: 0.2,
-      marginLeft: RFValue(15),
+      marginLeft: RFValue(5),
     justifyContent: "center",
     alignItems: "center",width:RFValue(30),
     height: RFValue(30),
