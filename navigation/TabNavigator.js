@@ -17,7 +17,7 @@ const BottomTabNavigator = () => {
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
-          if (route.name === "Feed") {
+           if (route.name === "Feed") {
             iconName = focused ? "book" : "book-outline";
           } else if (route.name === "Create Post") {
             iconName = focused ? "create" : "create-outline";
