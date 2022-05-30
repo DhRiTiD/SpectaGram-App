@@ -19,7 +19,7 @@ const BottomTabNavigator = () => {
           let iconName;
           if (route.name === "Feed") {
             iconName = focused ? "book" : "book-outline";
-          } else if (route.name === "Create Post") {
+          } else if (route.name === "CreatePost") {
             iconName = focused ? "create" : "create-outline";
           }
           return (
@@ -38,7 +38,7 @@ const BottomTabNavigator = () => {
       }}
     >
       <Tab.Screen name="Feed" component={Feed} />
-      <Tab.Screen name="Create Post" component={CreatePost} />
+      <Tab.Screen name="CreatePost" component={CreatePost} />
     </Tab.Navigator>
   );
 };
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "justify",
     backgroundColor: "#071D40",
-    borderTopWidth: 1,
+    borderTopWidth: RFValue(1),
     borderColor:'white',
     height: "11%",
     width: "100%",
