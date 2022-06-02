@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { RFValue } from 'react-native-responsive-fontsize';
 import * as Font from 'expo-font';
@@ -26,8 +26,11 @@ export default class PostCard extends Component {
   }
 
   render() {
-    return (
-      <View style={styles.container}>
+    return ( <TouchableOpacity onPress = {() => 
+          this.props.navigation.navigate("PostScreen" , {post:this.props.post})
+        }
+        style={styles.container}
+        >
         <View style={styles.cardContainer}>
           <View style={styles.authorContainer}>
             <View style={styles.authorImageContainer}>
@@ -55,7 +58,7 @@ export default class PostCard extends Component {
             </View>
           </View>
         </View>
-      </View>
+      </TouchableOpacity>
     );
   }
 }
@@ -96,6 +99,7 @@ const styles = StyleSheet.create({
   authorNameText: {
     color: 'white',
     fontSize: RFValue(20),
+    fontFamily: 'Bubblegum-Sans',
   },
   postImage: {
     marginTop: RFValue(20),
@@ -107,10 +111,12 @@ const styles = StyleSheet.create({
   },
   captionContainer: {},
   captionText: {
+    fontFamily: 'Bubblegum-Sans',
     fontSize: RFValue(19),
     color: 'white',
     paddingTop: RFValue(10),
     paddingLeft: RFValue(18),
+    margin: RFValue(10)
   },
   actionContainer: {
     justifyContent: 'center',

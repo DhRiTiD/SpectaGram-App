@@ -22,18 +22,19 @@
     "react-native-screens": "~3.10.1",
     "react-native-elements": "*",
     "react-native-tab-view": "^3.0.0",
+    "@react-navigation/stack": "*",
     "react-native-pager-view": "5.4.9",
     "react-native-reanimated": "~2.3.1",
     "@react-navigation/drawer": "*",
     "@react-navigation/native": "*",
     "react-native-vector-icons": "*",
+    "react-native-dropdown-picker": "*",
     "react-native-gesture-handler": "~2.1.0",
     "@react-navigation/bottom-tabs": "*",
     "react-native-safe-area-context": "3.3.2",
     "react-native-responsive-fontsize": "*",
     "@react-navigation/material-top-tabs": "*",
-    "@react-navigation/material-bottom-tabs": "*",
-    "react-native-dropdown-picker": "*"
+    "@react-navigation/material-bottom-tabs": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"

@@ -10,7 +10,6 @@ import {
   Platform,
 } from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
-import { FlatList } from 'react-native-gesture-handler';
 
 import * as Font from 'expo-font';
 import AppLoading from "expo-app-loading";
